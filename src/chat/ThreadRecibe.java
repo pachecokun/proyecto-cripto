@@ -66,6 +66,9 @@ public class ThreadRecibe implements Runnable {
             } catch (ClassNotFoundException classNotFoundException) {
                 main.mostrarMensaje("Objeto desconocido");
             } //fin catch               
+            catch(Exception e){
+                main.mostrarMensaje("Error al descifrar mensaje");
+            }
 
         } while (!mensaje.equals("Cliente>>> TERMINATE")); //Ejecuta hasta que el server escriba TERMINATE
 
