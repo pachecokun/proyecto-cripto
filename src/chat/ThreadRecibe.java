@@ -45,7 +45,7 @@ public class ThreadRecibe implements Runnable {
                     int key = 3;
                     for(int i = mensaje.length();i%key!=0;i++){
                         mensaje += " ";
-                    }
+                    } 
 
                     mensaje = r.descifrado(mensaje, key);
                 }else if(metodo == 1){
